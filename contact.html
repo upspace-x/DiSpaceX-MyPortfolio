@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — DiSpaceX</title>
+  <meta name="description" content="Contact DiSpaceX to start your website project." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/logo.png" alt=""> <span class="name">DiSpaceX</span></a>
+      <nav class="menu">
+        <a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a><a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle btn btn-secondary" data-toggle>Menu</button>
+    </div>
+    <div class="container menu-mobile" data-mobile>
+      <a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a><a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="section container">
+    <h2>Let’s build something great</h2>
+    <p class="muted">Tell me about your project. I’ll reply within 24 hours.</p>
+
+    <form id="contact-form" class="form card">
+      <input class="input" type="text" name="name" placeholder="Your name" required />
+      <input class="input" type="email" name="email" placeholder="Your email" required />
+      <textarea class="textarea" name="message" placeholder="Your message" required></textarea>
+      <button class="btn btn-primary" type="submit">Send message</button>
+      <p id="form-status" class="muted" style="margin:8px 0 0;"></p>
+    </form>
+
+    <div class="section grid grid-3">
+      <a class="card" href="mailto:quadri@example.com"><h3>Email</h3><p class="muted">quadri@example.com</p></a>
+      <a class="card" href="https://wa.me/2340000000000"><h3>WhatsApp</h3><p class="muted">Chat now</p></a>
+      <a class="card" href="https://linkedin.com/in/quadri-maruf"><h3>LinkedIn</h3><p class="muted">Connect</p></a>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container center">© 2026 DiSpaceX</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
