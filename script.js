@@ -1,4 +1,26 @@
-// Contact form handler
+// Mobile menu toggle
+const toggle = document.querySelector('[data-toggle]');
+const mobileMenu = document.querySelector('[data-mobile]');
+if (toggle && mobileMenu) {
+  toggle.addEventListener('click', () => {
+    const open = mobileMenu.style.display === 'flex';
+    mobileMenu.style.display = open ? 'none' : 'flex';
+  });
+}
+
+// Smooth scroll for internal anchors
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href').slice(1);
+    const el = document.getElementById(id);
+    if (el) {
+      e.preventDefault();
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+// Contact form handler (replace endpoint later)
 const contactForm = document.querySelector('#contact-form');
 if (contactForm) {
   contactForm.addEventListener('submit', async (e) => {
@@ -7,7 +29,6 @@ if (contactForm) {
     status.textContent = 'Sending...';
     try {
       const data = new FormData(contactForm);
-      // Replace with your Formspree or backend endpoint
       const res = await fetch('https://formspree.io/f/your-id', {
         method: 'POST',
         headers: { 'Accept': 'application/json' },
