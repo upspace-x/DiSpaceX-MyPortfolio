@@ -4,23 +4,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About — DiSpaceX</title>
+  <meta name="description" content="About Quadri Maruf (Sophist), website developer at DiSpaceX." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header"><div class="container nav"><a class="brand" href="index.html">DiSpaceX</a></div></header>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/logo.png" alt=""> <span class="name">DiSpaceX</span></a>
+      <nav class="menu">
+        <a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle btn btn-secondary" data-toggle>Menu</button>
+    </div>
+    <div class="container menu-mobile" data-mobile>
+      <a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+    </div>
+  </header>
+
   <main class="section container">
-    <h1>About Me</h1>
-    <p>I’m Quadri Maruf (Other Name: O., Nickname: Sophist), a website developer based in Lagos. I help businesses go digital with fast, modern, SEO‑friendly websites.</p>
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>WordPress & Elementor</li>
-      <li>Responsive design & performance</li>
-      <li>SEO fundamentals</li>
-    </ul>
-    <h2>Vision</h2>
-    <p>At DiSpaceX, my mission is to empower African SMEs with digital presence that drives growth.</p>
+    <div class="grid grid-2">
+      <div class="card">
+        <h1>About me</h1>
+        <p>I’m <strong>Quadri Maruf</strong> (Other Name: O., Nickname: Sophist), a website developer based in Lagos. I help businesses go digital with fast, modern, and SEO‑friendly websites.</p>
+        <h3>Skills</h3>
+        <ul class="muted">
+          <li>HTML, CSS, JavaScript</li>
+          <li>WordPress & Elementor</li>
+          <li>Responsive design & performance</li>
+          <li>SEO fundamentals</li>
+        </ul>
+        <h3>Why DiSpaceX</h3>
+        <p class="muted">Fast delivery, clean UX, and packages that fit your budget—without compromising quality.</p>
+        <h3>Mission & vision</h3>
+        <p class="muted">Mission: empower African SMEs with digital presence that drives growth. Vision: become a trusted partner for modern, scalable web solutions across Nigeria and beyond.</p>
+      </div>
+      <div class="card">
+        <img src="assets/profile.jpg" alt="Quadri Maruf" style="width:100%; border-radius:12px; border:1px solid var(--border);" />
+      </div>
+    </div>
   </main>
+
   <footer class="footer"><div class="container center">© 2026 DiSpaceX</div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
