@@ -1,16 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Services — DiSpaceX</title><link rel="stylesheet" href="style.css"></head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services — DiSpaceX</title>
+  <meta name="description" content="Website design, e‑commerce setup, SEO optimization, and maintenance packages." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-<header class="header"><div class="container nav"><a class="brand" href="index.html">DiSpaceX</a></div></header>
-<main class="section container">
-  <h1>Services</h1>
-  <div class="grid grid-3">
-    <div class="card"><h3>Starter</h3><p>1-page site, responsive, basic SEO</p></div>
-    <div class="card"><h3>Business</h3><p>5 pages, SEO optimization, contact form</p></div>
-    <div class="card"><h3>Premium</h3><p>Full site + blog, e-commerce, maintenance</p></div>
-  </div>
-</main>
-<footer class="footer"><div class="container center">© 2026 DiSpaceX</div></footer>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/logo.png" alt=""> <span class="name">DiSpaceX</span></a>
+      <nav class="menu">
+        <a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle btn btn-secondary" data-toggle>Menu</button>
+    </div>
+    <div class="container menu-mobile" data-mobile>
+      <a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="section container">
+    <h1>Packages</h1>
+    <p class="lead">Clear deliverables, realistic timelines, and value that fits your goals.</p>
+
+    <div class="grid grid-3">
+      <div class="card package">
+        <h3>Starter</h3>
+        <p class="price">₦120,000</p>
+        <ul>
+          <li>1‑page website (landing)</li>
+          <li>Responsive design</li>
+          <li>Basic SEO (titles, meta)</li>
+          <li>Contact form</li>
+        </ul>
+        <p class="muted">Timeline: 5–7 days</p>
+        <a class="btn btn-secondary" href="contact.html">Get Starter</a>
+      </div>
+
+      <div class="card package">
+        <h3>Business</h3>
+        <p class="price">₦280,000</p>
+        <ul>
+          <li>Up to 5 pages (Home, About, Services, Blog, Contact)</li>
+          <li>SEO optimization (structure, speed)</li>
+          <li>Lead capture forms</li>
+          <li>Basic analytics setup</li>
+        </ul>
+        <p class="muted">Timeline: 2 weeks</p>
+        <a class="btn btn-secondary" href="contact.html">Get Business</a>
+      </div>
+
+      <div class="card package">
+        <h3>Premium</h3>
+        <p class="price">₦480,000</p>
+        <ul>
+          <li>Full website + blog</li>
+          <li>E‑commerce setup</li>
+          <li>Performance & SEO audit</li>
+          <li>Maintenance support (1 month)</li>
+        </ul>
+        <p class="muted">Timeline: 3–4 weeks</p>
+        <a class="btn btn-secondary" href="contact.html">Get Premium</a>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="card">
+        <h3>Why choose DiSpaceX</h3>
+        <p class="muted">Fast delivery, clean UX, SEO‑friendly builds, and transparent communication from start to finish.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container center">© 2026 DiSpaceX</div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
