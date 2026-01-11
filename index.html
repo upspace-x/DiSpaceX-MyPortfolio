@@ -5,13 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DiSpaceX — Quadri Maruf (Sophist)</title>
   <meta name="description" content="DiSpaceX builds fast, modern, SEO-friendly websites for businesses in Lagos and beyond." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/logo.png" />
 </head>
 <body>
   <header class="header">
     <div class="container nav">
-      <a class="brand" href="index.html"><img src="assets/logo.png" alt="DiSpaceX logo" /> <span class="name">DiSpaceX</span></a>
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="DiSpaceX logo" />
+        <span class="name">DiSpaceX</span>
+      </a>
       <nav class="menu">
         <a href="about.html">About</a>
         <a href="portfolio.html">Portfolio</a>
@@ -19,37 +24,102 @@
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <button class="menu-toggle btn btn-secondary" data-toggle>Menu</button>
+    </div>
+    <div class="container menu-mobile" data-mobile>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
     </div>
   </header>
 
   <main>
     <section class="hero container">
-      <h1>Helping Lagos Businesses Go Digital</h1>
-      <p>Hi, I’m Quadri Maruf (Sophist), founder of DiSpaceX. I build modern, scalable websites that drive growth.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="contact.html">Hire Me</a>
-        <a class="btn btn-secondary" href="portfolio.html">View My Work</a>
+      <div>
+        <div class="kicker">Quadri Maruf — Sophist</div>
+        <h1 class="title">Helping Lagos businesses go digital</h1>
+        <p class="subtitle">At DiSpaceX, I build modern, scalable, SEO‑friendly websites—clean code, clear results.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="contact.html">Hire me</a>
+          <a class="btn btn-secondary" href="portfolio.html">View my work</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/profile.jpg" alt="Quadri Maruf" style="width:100%; border-radius:12px; border:1px solid var(--border);" />
+        <div style="margin-top:12px;">
+          <span class="badge">Lagos, Nigeria</span>
+          <span class="badge">Frontend & WordPress</span>
+        </div>
       </div>
     </section>
 
     <section class="section container">
-      <h2>Featured Projects</h2>
+      <h2>Mission</h2>
+      <p class="lead">We help SMEs in Lagos and beyond build modern, scalable websites that drive growth and trust.</p>
+    </section>
+
+    <section class="section container">
+      <h2>Featured projects</h2>
       <div class="grid grid-3">
-        <div class="card">Project 1 — Business Website</div>
-        <div class="card">Project 2 — E-commerce Store</div>
-        <div class="card">Project 3 — Creative Portfolio</div>
+        <a class="card project" href="https://example.com/school-site">
+          <img src="assets/school.jpg" alt="School website" />
+          <h3>School website</h3>
+          <p>Modern site for a secondary school—events, admissions, and updates.</p>
+        </a>
+        <a class="card project" href="https://example.com/blog-site">
+          <img src="assets/blog.jpg" alt="Blog website" />
+          <h3>Blog website</h3>
+          <p>Clean, SEO‑optimized blog layout with categories and search.</p>
+        </a>
+        <a class="card project" href="https://example.com/fashion-site">
+          <img src="assets/fashion.jpg" alt="Fashion & styles website" />
+          <h3>Fashion & styles</h3>
+          <p>E‑commerce site for a fashion brand—catalog, checkout, and mobile UX.</p>
+        </a>
+        <a class="card project" href="https://example.com/realtor-site">
+          <img src="assets/realtor.jpg" alt="Realtor website" />
+          <h3>Realtor website</h3>
+          <p>Property listings, filters, and lead capture for a real estate firm.</p>
+        </a>
+        <a class="card project" href="https://example.com/dispacex">
+          <img src="assets/dispacex.jpg" alt="DiSpaceX website" />
+          <h3>DiSpaceX</h3>
+          <p>My own brand site—portfolio, services, and contact.</p>
+        </a>
       </div>
     </section>
 
     <section class="section container">
       <h2>Testimonials</h2>
-      <p>“Quadri delivered fast and exceeded expectations.” — Client A</p>
-      <p>“Professional, responsive, and great results.” — Client B</p>
+      <div class="grid grid-2">
+        <div class="card">
+          <p class="muted">“Working with Quadri was seamless. He delivered a beautiful site in just 10 days.”</p>
+          <p><strong>Aisha</strong> — Fashion Brand Owner</p>
+        </div>
+        <div class="card">
+          <p class="muted">“Our school website is now mobile‑friendly and easy to update. Highly recommend DiSpaceX.”</p>
+          <p><strong>Mr. Adewale</strong> — School Principal</p>
+        </div>
+        <div class="card">
+          <p class="muted">“Quadri understood our needs and built a site that helped us attract more clients.”</p>
+          <p><strong>Tunde</strong> — Realtor</p>
+        </div>
+        <div class="card">
+          <p class="muted">“Professional, responsive, and great results. We saw more inquiries within weeks.”</p>
+          <p><strong>Chinedu</strong> — Consultant</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container center">© 2026 DiSpaceX — Quadri Maruf (Sophist)</div>
+    <div class="container center">
+      © 2026 DiSpaceX — Quadri Maruf (O., Sophist) • <a href="mailto:contact.dispacex@gmail.com">contact.dispacex@gmail.com</a>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
