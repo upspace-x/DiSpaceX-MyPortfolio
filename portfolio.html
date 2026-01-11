@@ -1,31 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Portfolio — DiSpaceX</title><link rel="stylesheet" href="style.css"></head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — DiSpaceX</title>
+  <meta name="description" content="Selected projects by DiSpaceX: school site, blog, fashion e‑commerce, realtor, and brand site." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-<header class="header"><div class="container nav"><a class="brand" href="index.html">DiSpaceX</a></div></header>
-<main class="section container">
-  <h1>Portfolio</h1>
-  <div class="grid grid-3">
-    <div class="card">
-      <h3>Retail Fashion Brand</h3>
-      <p><strong>Problem:</strong> Needed online store.</p>
-      <p><strong>Solution:</strong> Built mobile-first e-commerce site.</p>
-      <p><strong>Results:</strong> Increased sales by 40% in 3 months.</p>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/logo.png" alt=""> <span class="name">DiSpaceX</span></a>
+      <nav class="menu">
+        <a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle btn btn-secondary" data-toggle>Menu</button>
     </div>
-    <div class="card">
-      <h3>Consulting Firm</h3>
-      <p><strong>Problem:</strong> Poor online visibility.</p>
-      <p><strong>Solution:</strong> SEO-friendly corporate site.</p>
-      <p><strong>Results:</strong> 3x more inquiries.</p>
+    <div class="container menu-mobile" data-mobile>
+      <a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
     </div>
-    <div class="card">
-      <h3>Creative Portfolio</h3>
-      <p><strong>Problem:</strong> Scattered work.</p>
-      <p><strong>Solution:</strong> Minimal layout, strong visuals.</p>
-      <p><strong>Results:</strong> Improved discoverability.</p>
+  </header>
+
+  <main class="section container">
+    <h1>Case studies</h1>
+    <p class="lead">Each project focuses on clarity, speed, and conversion—tailored to the client’s goals.</p>
+
+    <div class="grid grid-3">
+      <article class="card project">
+        <img src="assets/school.jpg" alt="School website" />
+        <h3>School website</h3>
+        <p><strong>Client/industry:</strong> Secondary school in Lagos</p>
+        <p><strong>Problem:</strong> Outdated site, hard to update, poor mobile experience.</p>
+        <p><strong>Solution:</strong> Built a modern, mobile‑first site with events, admissions, and CMS for staff.</p>
+        <p><strong>Results:</strong> 2× faster load times, increased parent engagement.</p>
+        <a class="btn btn-secondary" href="https://example.com/school-site">View project</a>
+      </article>
+
+      <article class="card project">
+        <img src="assets/blog.jpg" alt="Blog website" />
+        <h3>Blog website</h3>
+        <p><strong>Client/industry:</strong> Content creator</p>
+        <p><strong>Problem:</strong> Low search visibility and messy navigation.</p>
+        <p><strong>Solution:</strong> Clean, SEO‑optimized layout with categories, tags, and search.</p>
+        <p><strong>Results:</strong> Better time‑on‑page and organic traffic growth.</p>
+        <a class="btn btn-secondary" href="https://example.com/blog-site">View project</a>
+      </article>
+
+      <article class="card project">
+        <img src="assets/fashion.jpg" alt="Fashion & styles website" />
+        <h3>Fashion & styles</h3>
+        <p><strong>Client/industry:</strong> Fashion brand</p>
+        <p><strong>Problem:</strong> No online store, limited reach beyond physical shop.</p>
+        <p><strong>Solution:</strong> E‑commerce site with product catalog, checkout, and mobile UX.</p>
+        <p><strong>Results:</strong> Increased online sales and repeat customers.</p>
+        <a class="btn btn-secondary" href="https://example.com/fashion-site">View project</a>
+      </article>
+
+      <article class="card project">
+        <img src="assets/realtor.jpg" alt="Realtor website" />
+        <h3>Realtor website</h3>
+        <p><strong>Client/industry:</strong> Real estate firm</p>
+        <p><strong>Problem:</strong> Hard to showcase listings and capture leads.</p>
+        <p><strong>Solution:</strong> Property listings with filters, map view, and lead forms.</p>
+        <p><strong>Results:</strong> More inquiries and better property discovery.</p>
+        <a class="btn btn-secondary" href="https://example.com/realtor-site">View project</a>
+      </article>
+
+      <article class="card project">
+        <img src="assets/dispacex.jpg" alt="DiSpaceX website" />
+        <h3>DiSpaceX</h3>
+        <p><strong>Client/industry:</strong> Personal brand</p>
+        <p><strong>Problem:</strong> Needed a credible portfolio and service showcase.</p>
+        <p><strong>Solution:</strong> Built a clean, modern site with case studies and contact.</p>
+        <p><strong>Results:</strong> Stronger brand presence and lead generation.</p>
+        <a class="btn btn-secondary" href="https://example.com/dispacex">View project</a>
+      </article>
     </div>
-  </div>
-</main>
-<footer class="footer"><div class="container center">© 2026 DiSpaceX</div></footer>
+
+    <section class="section">
+      <div class="card">
+        <h3>Testimonials</h3>
+        <p class="muted">“Quadri delivered fast and exceeded expectations.” — Client A</p>
+        <p class="muted">“Professional, responsive, and great results.” — Client B</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container center">© 2026 DiSpaceX</div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
